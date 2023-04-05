@@ -1,14 +1,4 @@
-from series import lucas, sum_series
-
-def fibonacci(n):
-    a, b = 0, 1
-    fib = [a, b]
-    for i in range(n):
-        a, b = b, a + b
-        fib.append(b)
-        if len(fib) == n+2:
-            print(f"The fib series is: {fib}")
-    return f"for your parameter {n} the value is {b}"
+from series import fibonacci, lucas, sum_series
 
 series = input("Enter the series type (fib/luc/sum): ")
 
